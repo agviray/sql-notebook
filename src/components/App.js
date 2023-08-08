@@ -1,4 +1,5 @@
 import React from 'react';
+import '../sass/main.css';
 
 const App = () => {
   return (
