@@ -6,12 +6,12 @@ const Layout = () => {
   return (
     <div>
       <Header />
-      <ul>
+      {/* <ul>
         <Link to="table-of-contents">Table of Contents</Link>
         <Link to="page-one">Page One</Link>
         <Link to="page-two">Page Two</Link>
         <Link to="page-three">Page Three</Link>
-      </ul>
+      </ul> */}
       <main>
         <Outlet />
       </main>

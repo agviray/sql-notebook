@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import notebook from '../assets/icons/notebook.svg';
+import Hamburger from './Hamburger';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header>
       <nav>
@@ -17,6 +20,10 @@ const Header = () => {
               </span>
             </Link>
           </div>
+          <Hamburger
+            isMenuOpen={isMenuOpen}
+            onIsMenuOpenChange={setIsMenuOpen}
+          />
         </div>
       </nav>
     </header>
