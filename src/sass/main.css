@@ -69,18 +69,21 @@ header > nav > .content {
   align-items: center;
   height: 100%;
 }
-header > nav > .content .headerLinkContainer > a > span {
+header > nav > .content .headerLinkContainer:hover {
+  cursor: pointer;
+}
+header > nav > .content .headerLinkContainer > span {
   display: inline-flex;
   gap: 1rem;
 }
-header > nav > .content .headerLinkContainer > a > span > span {
+header > nav > .content .headerLinkContainer > span > span {
   display: inline-flex;
   align-items: center;
   width: 20px;
   line-height: 0;
   font-size: 0;
 }
-header > nav > .content .headerLinkContainer > a > span > span > img {
+header > nav > .content .headerLinkContainer > span > span > img {
   width: 100%;
 }
 header > nav > .content .hamburger {
@@ -142,14 +145,42 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 }
 
 .navMenu {
+  display: inline-flex;
+  justify-content: flex-end;
   position: fixed;
   width: 100%;
-  padding: 60px 0;
-  background-color: white;
   z-index: 4;
   transform: translateY(-100%);
   transition: all 0.3s ease;
 }
 .navMenu.isDisplayed {
   transform: translateY(0);
+}
+.navMenu > div {
+  display: flex;
+  justify-content: right;
+}
+.navMenu > div ul {
+  background-color: white;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
+}
+.navMenu > div ul li {
+  padding-left: 1rem;
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: white;
+}
+.navMenu > div ul li > span {
+  color: black;
+}
+.navMenu > div ul li:hover {
+  cursor: pointer;
+  background-color: #e8ecff;
+}
+.navMenu > div ul li:hover > span {
+  color: blue;
 }/*# sourceMappingURL=main.css.map */

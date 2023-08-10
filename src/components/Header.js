@@ -1,26 +1,35 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import notebook from '../assets/icons/notebook.svg';
 import Hamburger from './Hamburger';
 import NavMenu from './NavMenu';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const navigateToPage = (path) => {
+    if (isMenuOpen === true) {
+      setIsMenuOpen(false);
+    }
+    navigate(path);
+  };
 
   return (
     <div>
       <header>
         <nav>
           <div className="content">
-            <div className="headerLinkContainer">
-              <Link to={'/'}>
+            <div
+              onClick={() => navigateToPage('/')}
+              className="headerLinkContainer"
+            >
+              <span>
+                <h1>SQL Notebook</h1>
                 <span>
-                  <h1>SQL Notebook</h1>
-                  <span>
-                    <img src={notebook} alt="SQL Notebook logo" />
-                  </span>
+                  <img src={notebook} alt="SQL Notebook logo" />
                 </span>
-              </Link>
+              </span>
             </div>
             <Hamburger
               isMenuOpen={isMenuOpen}
@@ -29,7 +38,11 @@ const Header = () => {
           </div>
         </nav>
       </header>
-      <NavMenu isMenuOpen={isMenuOpen} />
+      <NavMenu
+        isMenuOpen={isMenuOpen}
+        navigateToPage={navigateToPage}
+        onIsMenuOpenChange={setIsMenuOpen}
+      />
     </div>
   );
 };

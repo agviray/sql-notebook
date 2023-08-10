@@ -27,21 +27,22 @@ header {
 
       // - Logo Link container
       .headerLinkContainer {
-        & > a {
+        &:hover {
+          cursor: pointer;
+        }
+        & > span {
+          display: inline-flex;
+          gap: 1rem;
+
           & > span {
             display: inline-flex;
-            gap: 1rem;
+            align-items: center;
+            width: 20px;
+            line-height: 0;
+            font-size: 0;
 
-            & > span {
-              display: inline-flex;
-              align-items: center;
-              width: 20px;
-              line-height: 0;
-              font-size: 0;
-
-              & > img {
-                width: 100%;
-              }
+            & > img {
+              width: 100%;
             }
           }
         }
