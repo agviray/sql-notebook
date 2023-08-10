@@ -1,0 +1,13 @@
+.navMenu {
+  position: fixed;
+  width: 100%;
+  padding: 60px 0;
+  background-color: white;
+  z-index: 4;
+  transform: translateY(-100%);
+  transition: all 0.3s ease;
+
+  &.isDisplayed {
+    transform: translateY(0);
+  }
+}
