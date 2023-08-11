@@ -7,13 +7,21 @@ main {
   padding-top: 60px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "IBM Plex Sans Medium", Arial, Helvetica, sans-serif;
+}
+
 p {
   line-height: 1.5;
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: #333333;
+  color: #1d1e20;
 }
 
 ul {
@@ -39,10 +47,18 @@ button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #333333;
+  color: #1d1e20;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@font-face {
+  font-family: "IBM Plex Sans Light";
+  src: url(../fonts/ibm_plex_sans_ff/IBMPlexSans-Light.ttf);
+}
+@font-face {
+  font-family: "IBM Plex Sans Medium";
+  src: url(../fonts/ibm_plex_sans_ff/IBMPlexSans-Medium.ttf);
+}
 .overlay {
   position: fixed;
   top: 0;
@@ -122,7 +138,7 @@ header > nav > .content .hamburger::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #1d1e20;
   opacity: 0;
   border-radius: 50%;
   transform: scale(0);
@@ -133,7 +149,7 @@ header > nav > .content .hamburger:hover {
 }
 header > nav > .content .hamburger > span {
   display: block;
-  background-color: black;
+  background-color: #1d1e20;
   width: 80%;
   height: 2px;
 }
@@ -188,15 +204,16 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   display: flex;
   align-items: center;
   height: 40px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 .navMenu > div.menuListContainer ul li > span {
-  color: black;
+  color: #1d1e20;
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }
 .navMenu > div.menuListContainer ul li:hover {
   cursor: pointer;
-  background-color: #e8ecff;
+  background-color: rgb(230, 234, 255);
 }
 .navMenu > div.menuListContainer ul li:hover > span {
-  color: blue;
+  color: rgb(0, 86, 254);
 }/*# sourceMappingURL=main.css.map */

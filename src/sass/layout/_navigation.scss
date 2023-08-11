@@ -24,19 +24,20 @@
         display: flex;
         align-items: center;
         height: 40px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
 
         & > span {
-          color: black;
+          color: $globalFontColor;
+          font-family: $globalMainFontFamily;
         }
 
         // On li hover
         &:hover {
           cursor: pointer;
-          background-color: #e8ecff;
+          background-color: $midBlue;
 
           & > span {
-            color: blue;
+            color: $darkBlue;
           }
         }
       }
