@@ -3,14 +3,14 @@
   & > section {
     // page inner container
     & > div {
-      // max-width: $globalMaxWidth;
       max-width: 1000px;
       margin: 0 auto;
-      padding: 100px 1.5rem 0 1.5rem;
+      padding: 160px 1.5rem 0 1.5rem;
 
       // page heading
       & > div.headingContainer {
         & > h2 {
+          font-size: 25px;
           padding-bottom: 2rem;
           color: $darkBlue;
         }
@@ -21,9 +21,9 @@
         p:not(:nth-of-type(1)) {
           padding-top: 1rem;
         }
-        ul {
-          padding-top: 1.5rem;
-          padding-bottom: 1.5rem;
+
+        ul.contentList {
+          padding-top: 1rem;
           padding-left: 2rem;
           list-style: disc;
           & li {

@@ -262,31 +262,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   }
 }
 
-.wrapper > section > div {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 100px 1.5rem 0 1.5rem;
-}
-.wrapper > section > div > div.headingContainer > h2 {
-  padding-bottom: 2rem;
-  color: rgb(0, 86, 254);
-}
-.wrapper > section > div > div.mainContentContainer p:not(:nth-of-type(1)) {
-  padding-top: 1rem;
-}
-.wrapper > section > div > div.mainContentContainer ul {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 2rem;
-  list-style: disc;
-}
-.wrapper > section > div > div.mainContentContainer ul li:not(:nth-of-type(1)) {
-  padding-top: 1rem;
-}
-.wrapper > section > div > div.mainContentContainer ul li > span {
-  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
-}
-
 .homePageWrapper {
   position: relative;
   height: 100vh;
@@ -344,4 +319,55 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   background-color: rgb(230, 234, 255);
   color: rgb(0, 86, 254);
   border-color: rgb(0, 86, 254);
+}
+
+.wrapper > section > div {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 160px 1.5rem 0 1.5rem;
+}
+.wrapper > section > div > div.headingContainer > h2 {
+  font-size: 25px;
+  padding-bottom: 2rem;
+  color: rgb(0, 86, 254);
+}
+.wrapper > section > div > div.mainContentContainer p:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.wrapper > section > div > div.mainContentContainer ul.contentList {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  list-style: disc;
+}
+.wrapper > section > div > div.mainContentContainer ul.contentList li:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.wrapper > section > div > div.mainContentContainer ul.contentList li > span {
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
+}
+
+.tableOfContents > ul {
+  padding-left: 1rem;
+}
+.tableOfContents > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+.tableOfContents > ul > li > span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #1d1e20;
+  border-radius: 50%;
+}
+.tableOfContents > ul > li > a {
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
+}
+.tableOfContents > ul > li:hover > span {
+  background-color: rgb(0, 86, 254);
+}
+.tableOfContents > ul > li:hover > a {
+  color: rgb(0, 86, 254);
 }/*# sourceMappingURL=main.css.map */

@@ -17,7 +17,7 @@ const About = () => {
               It currently houses a number of static pages only, but I'm aiming
               to add additional features which might include:
             </p>
-            <ul>
+            <ul className="contentList">
               <li>
                 <span>
                   Access to a hosted sample database in order to send queries
