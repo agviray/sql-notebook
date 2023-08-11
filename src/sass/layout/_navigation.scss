@@ -1,18 +1,29 @@
-.navMenu {
-  position: fixed;
+.navMenuMobile {
+  display: block;
+  position: absolute;
+  top: 0;
   right: 0;
   z-index: 4;
+  visibility: hidden;
   transform: translateY(-100%);
   transition: all 0.3s ease;
 
   &.isDisplayed {
+    visibility: visible;
     transform: translateY(0);
+
+    & > div.menuListContainer {
+      & > ul {
+        opacity: 1;
+      }
+    }
   }
 
   & > div.menuListContainer {
     ul {
+      opacity: 0;
       background-color: white;
-      padding-top: 120px;
+      padding-top: 100px;
       padding-bottom: 60px;
       -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
       -moz-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
@@ -39,6 +50,34 @@
           & > span {
             color: $darkBlue;
           }
+        }
+      }
+    }
+  }
+
+  // Larger viewport width styles
+  @media screen and (min-width: 800px) {
+    position: relative;
+    height: 100%;
+    visibility: visible;
+    transform: translateY(0);
+    transition: none;
+
+    & div.menuListContainer {
+      height: 100%;
+
+      ul {
+        opacity: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        box-shadow: none;
+
+        li {
+          height: 100%;
+          padding: 0 1rem;
         }
       }
     }

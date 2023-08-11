@@ -2,26 +2,22 @@ import React from 'react';
 
 const menuItems = [
   {
+    name: 'Home',
+    page: '/',
+  },
+  {
+    name: 'About',
+    page: 'about',
+  },
+  {
     name: 'Table of Contents',
     page: 'table-of-contents',
-  },
-  {
-    name: 'Page One',
-    page: 'page-one',
-  },
-  {
-    name: 'Page Two',
-    page: 'page-two',
-  },
-  {
-    name: 'Page Three',
-    page: 'page-three',
   },
 ];
 
 const NavMenu = ({ isMenuOpen, navigateToPage }) => {
   return (
-    <div className={`navMenu ${isMenuOpen ? 'isDisplayed' : ''}`}>
+    <div className={`navMenuMobile ${isMenuOpen ? 'isDisplayed' : ''}`}>
       <div className="menuListContainer">
         <ul>
           {menuItems.map(({ name, page }, index) => (

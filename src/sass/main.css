@@ -60,6 +60,7 @@ button {
   src: url(../fonts/ibm_plex_sans_ff/IBMPlexSans-Medium.ttf);
 }
 .overlay {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -75,6 +76,11 @@ button {
 .overlay.isActive {
   visibility: visible;
   background-color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (min-width: 800px) {
+  .overlay {
+    display: none;
+  }
 }
 
 header {
@@ -94,10 +100,11 @@ header::after {
   background-color: #f2f2f2;
 }
 header > nav {
+  max-width: 1200px;
   height: 100%;
+  margin: 0 auto;
 }
 header > nav > .content {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,8 +128,7 @@ header > nav > .content .headerLinkContainer > span > span > img {
   width: 100%;
 }
 header > nav > .content .hamburger {
-  position: absolute;
-  right: 1rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -130,6 +136,12 @@ header > nav > .content .hamburger {
   padding: 3px;
   height: 30px;
   width: 30px;
+  z-index: 5;
+}
+@media screen and (min-width: 800px) {
+  header > nav > .content .hamburger {
+    display: none;
+  }
 }
 header > nav > .content .hamburger::before {
   content: "";
@@ -138,7 +150,7 @@ header > nav > .content .hamburger::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1d1e20;
+  background-color: rgb(230, 234, 255);
   opacity: 0;
   border-radius: 50%;
   transform: scale(0);
@@ -164,41 +176,49 @@ header > nav > .content .hamburger.toggledOpen::before {
   transform: scale(1);
 }
 header > nav > .content .hamburger.toggledOpen span {
-  background-color: white;
+  background-color: rgb(0, 86, 254);
 }
 header > nav > .content .hamburger.toggledOpen > span:nth-of-type(1) {
   margin-top: 0;
-  transform: translate(0.5px, 11px) rotate(45deg);
+  transform: translate(0px, 11px) rotate(45deg);
 }
 header > nav > .content .hamburger.toggledOpen > span:nth-of-type(2) {
   display: none;
 }
 header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   margin-bottom: 0;
-  transform: translate(0.5px, -11px) rotate(-45deg);
+  transform: translate(0px, -11px) rotate(-45deg);
 }
 
 .appWrapper {
   position: relative;
 }
 
-.navMenu {
-  position: fixed;
+.navMenuMobile {
+  display: block;
+  position: absolute;
+  top: 0;
   right: 0;
   z-index: 4;
+  visibility: hidden;
   transform: translateY(-100%);
   transition: all 0.3s ease;
 }
-.navMenu.isDisplayed {
+.navMenuMobile.isDisplayed {
+  visibility: visible;
   transform: translateY(0);
 }
-.navMenu > div.menuListContainer ul {
+.navMenuMobile.isDisplayed > div.menuListContainer > ul {
+  opacity: 1;
+}
+.navMenuMobile > div.menuListContainer ul {
+  opacity: 0;
   background-color: white;
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 60px;
   box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
 }
-.navMenu > div.menuListContainer ul li {
+.navMenuMobile > div.menuListContainer ul li {
   padding-left: 1rem;
   padding-right: 3rem;
   display: flex;
@@ -206,14 +226,39 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   height: 40px;
   background-color: rgb(255, 255, 255);
 }
-.navMenu > div.menuListContainer ul li > span {
+.navMenuMobile > div.menuListContainer ul li > span {
   color: #1d1e20;
   font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }
-.navMenu > div.menuListContainer ul li:hover {
+.navMenuMobile > div.menuListContainer ul li:hover {
   cursor: pointer;
   background-color: rgb(230, 234, 255);
 }
-.navMenu > div.menuListContainer ul li:hover > span {
+.navMenuMobile > div.menuListContainer ul li:hover > span {
   color: rgb(0, 86, 254);
+}
+@media screen and (min-width: 800px) {
+  .navMenuMobile {
+    position: relative;
+    height: 100%;
+    visibility: visible;
+    transform: translateY(0);
+    transition: none;
+  }
+  .navMenuMobile div.menuListContainer {
+    height: 100%;
+  }
+  .navMenuMobile div.menuListContainer ul {
+    opacity: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-shadow: none;
+  }
+  .navMenuMobile div.menuListContainer ul li {
+    height: 100%;
+    padding: 0 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
