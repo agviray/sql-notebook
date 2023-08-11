@@ -1,8 +1,6 @@
 .navMenu {
-  display: inline-flex;
-  justify-content: flex-end;
   position: fixed;
-  width: 100%;
+  right: 0;
   z-index: 4;
   transform: translateY(-100%);
   transition: all 0.3s ease;
@@ -11,9 +9,7 @@
     transform: translateY(0);
   }
 
-  & > div {
-    display: flex;
-    justify-content: right;
+  & > div.menuListContainer {
     ul {
       background-color: white;
       padding-top: 120px;

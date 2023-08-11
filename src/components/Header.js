@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import notebook from '../assets/icons/notebook.svg';
 import Hamburger from './Hamburger';
@@ -6,7 +6,23 @@ import NavMenu from './NavMenu';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const navigate = useNavigate();
+  const overlayRef = useRef(null);
+
+  useEffect(() => {
+    const overlay = overlayRef.current;
+
+    const handleOverlayClick = () => {
+      setIsMenuOpen(false);
+    };
+
+    overlay.addEventListener('click', handleOverlayClick);
+
+    return () => {
+      overlay.removeEventListener('click', handleOverlayClick);
+    };
+  }, []);
 
   const navigateToPage = (path) => {
     if (isMenuOpen === true) {
@@ -16,7 +32,11 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <>
+      <div
+        ref={overlayRef}
+        className={`overlay ${isMenuOpen ? 'isActive' : ''}`}
+      ></div>
       <header>
         <nav>
           <div className="content">
@@ -38,12 +58,8 @@ const Header = () => {
           </div>
         </nav>
       </header>
-      <NavMenu
-        isMenuOpen={isMenuOpen}
-        navigateToPage={navigateToPage}
-        onIsMenuOpenChange={setIsMenuOpen}
-      />
-    </div>
+      <NavMenu isMenuOpen={isMenuOpen} navigateToPage={navigateToPage} />
+    </>
   );
 };
 

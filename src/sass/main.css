@@ -43,6 +43,24 @@ button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.overlay.isActive {
+  visibility: visible;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -144,11 +162,13 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   transform: translate(0.5px, -11px) rotate(-45deg);
 }
 
+.appWrapper {
+  position: relative;
+}
+
 .navMenu {
-  display: inline-flex;
-  justify-content: flex-end;
   position: fixed;
-  width: 100%;
+  right: 0;
   z-index: 4;
   transform: translateY(-100%);
   transition: all 0.3s ease;
@@ -156,17 +176,13 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .navMenu.isDisplayed {
   transform: translateY(0);
 }
-.navMenu > div {
-  display: flex;
-  justify-content: right;
-}
-.navMenu > div ul {
+.navMenu > div.menuListContainer ul {
   background-color: white;
   padding-top: 120px;
   padding-bottom: 60px;
   box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
 }
-.navMenu > div ul li {
+.navMenu > div.menuListContainer ul li {
   padding-left: 1rem;
   padding-right: 3rem;
   display: flex;
@@ -174,13 +190,13 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   height: 40px;
   background-color: white;
 }
-.navMenu > div ul li > span {
+.navMenu > div.menuListContainer ul li > span {
   color: black;
 }
-.navMenu > div ul li:hover {
+.navMenu > div.menuListContainer ul li:hover {
   cursor: pointer;
   background-color: #e8ecff;
 }
-.navMenu > div ul li:hover > span {
+.navMenu > div.menuListContainer ul li:hover > span {
   color: blue;
 }/*# sourceMappingURL=main.css.map */

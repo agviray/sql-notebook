@@ -1,3 +1,22 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  background-color: rgb(255, 255, 255, 0);
+  z-index: 1;
+  transition: all 0.3s ease;
+
+  &.isActive {
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
 header {
   position: fixed;
   width: 100%;

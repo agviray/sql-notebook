@@ -19,10 +19,10 @@ const menuItems = [
   },
 ];
 
-const NavMenu = ({ isMenuOpen, navigateToPage, onIsMenuOpenChange }) => {
+const NavMenu = ({ isMenuOpen, navigateToPage }) => {
   return (
     <div className={`navMenu ${isMenuOpen ? 'isDisplayed' : ''}`}>
-      <div>
+      <div className="menuListContainer">
         <ul>
           {menuItems.map(({ name, page }, index) => (
             <li key={index} onClick={(e) => navigateToPage(page)}>
