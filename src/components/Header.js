@@ -55,9 +55,8 @@ const Header = () => {
               className="headerLinkContainer"
             >
               <span>
-                <h1>SQL Notebook</h1>
                 <span>
-                  <img src={notebook} alt="SQL Notebook logo" />
+                  <img src={notebook} alt="SQL Notebook notebook logo" />
                 </span>
               </span>
             </div>

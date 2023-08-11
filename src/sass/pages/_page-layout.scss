@@ -12,6 +12,7 @@
       & > div.headingContainer {
         & > h2 {
           padding-bottom: 2rem;
+          color: $darkBlue;
         }
       }
 
@@ -22,6 +23,7 @@
         }
         ul {
           padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
           padding-left: 2rem;
           list-style: disc;
           & li {
