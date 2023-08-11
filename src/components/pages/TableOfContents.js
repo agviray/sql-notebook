@@ -2,8 +2,15 @@ import React from 'react';
 
 const TableOfContents = () => {
   return (
-    <div>
-      <h1>Table of Contents</h1>
+    <div className="wrapper">
+      <section>
+        <div>
+          <div className="headingContainer">
+            <h2>Table of Contents</h2>
+          </div>
+          <div className="mainContentContainer"></div>
+        </div>
+      </section>
     </div>
   );
 };

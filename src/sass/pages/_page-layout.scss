@@ -1,0 +1,39 @@
+.wrapper {
+  // page wrapper
+  & > section {
+    // page inner container
+    & > div {
+      // max-width: $globalMaxWidth;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 100px 1.5rem 0 1.5rem;
+
+      // page heading
+      & > div.headingContainer {
+        & > h2 {
+          padding-bottom: 2rem;
+        }
+      }
+
+      // main content styles
+      & > div.mainContentContainer {
+        p:not(:nth-of-type(1)) {
+          padding-top: 1rem;
+        }
+        ul {
+          padding-top: 1.5rem;
+          padding-left: 2rem;
+          list-style: disc;
+          & li {
+            &:not(:nth-of-type(1)) {
+              padding-top: 1rem;
+            }
+            & > span {
+              font-family: $globalMainFontFamily;
+            }
+          }
+        }
+      }
+    }
+  }
+}

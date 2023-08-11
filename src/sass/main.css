@@ -261,4 +261,27 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
     height: 100%;
     padding: 0 1rem;
   }
+}
+
+.wrapper > section > div {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 1.5rem 0 1.5rem;
+}
+.wrapper > section > div > div.headingContainer > h2 {
+  padding-bottom: 2rem;
+}
+.wrapper > section > div > div.mainContentContainer p:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.wrapper > section > div > div.mainContentContainer ul {
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  list-style: disc;
+}
+.wrapper > section > div > div.mainContentContainer ul li:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.wrapper > section > div > div.mainContentContainer ul li > span {
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }/*# sourceMappingURL=main.css.map */
