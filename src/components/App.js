@@ -5,6 +5,7 @@ import Layout from './Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import TableOfContents from './pages/TableOfContents';
+import GenSqlInfo from './pages/GenSqlInfo';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="table-of-contents" element={<TableOfContents />} />
+        <Route path="/:id" element={<GenSqlInfo />} />
       </Route>
     </Routes>
   );

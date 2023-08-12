@@ -5,7 +5,7 @@
     & > div {
       max-width: 1000px;
       margin: 0 auto;
-      padding: 160px 1.5rem 0 1.5rem;
+      padding: 160px 1.5rem 160px 1.5rem;
 
       // page heading
       & > div.headingContainer {
@@ -18,10 +18,7 @@
 
       // main content styles
       & > div.mainContentContainer {
-        p:not(:nth-of-type(1)) {
-          padding-top: 1rem;
-        }
-
+        @include generalParagraph;
         ul.contentList {
           padding-top: 1rem;
           padding-left: 2rem;

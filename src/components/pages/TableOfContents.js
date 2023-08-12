@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 const tableOfContentsContent = [
   {
     name: 'General SQL Info',
-    path: 'general-sql-info',
+    path: '../gen-sql',
   },
   {
     name: 'Queries with Constraints',
-    path: 'queries-with-constraints',
+    path: '../queries-with-constraints',
   },
 ];
 
