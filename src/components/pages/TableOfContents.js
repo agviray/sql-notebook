@@ -7,6 +7,10 @@ const tableOfContentsContent = [
     path: '../gen-sql',
   },
   {
+    name: 'Creating a table - CREATE TABLE',
+    path: '../create-table',
+  },
+  {
     name: 'Queries with Constraints',
     path: '../queries-with-constraints',
   },

@@ -262,6 +262,40 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   }
 }
 
+.createTable h3 {
+  font-size: 20px;
+  padding-bottom: 1.5rem;
+}
+.createTable h4 {
+  color: #4a4b4d;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+.createTable p:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.createTable article:not(:nth-child(1)) {
+  padding-top: 1rem;
+}
+.createTable .tableContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.createTable .tableContainer table {
+  border-collapse: collapse;
+}
+.createTable .tableContainer table tr:nth-of-type(1) {
+  background-color: #fea700;
+}
+.createTable .tableContainer table tr:nth-of-type(even) {
+  background-color: rgb(246, 247, 255);
+}
+.createTable .tableContainer table tr td,
+.createTable .tableContainer table tr th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #1d1e20;
+}
+
 .generalSqlInfo {
   font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }

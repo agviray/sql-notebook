@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import TableOfContents from './pages/TableOfContents';
 import GenSqlInfo from './pages/GenSqlInfo';
+import CreateTable from './pages/CreateTable';
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="table-of-contents" element={<TableOfContents />} />
-        <Route path="/:id" element={<GenSqlInfo />} />
+        <Route path="gen-sql" element={<GenSqlInfo />} />
+        <Route path="create-table" element={<CreateTable />} />
       </Route>
     </Routes>
   );
