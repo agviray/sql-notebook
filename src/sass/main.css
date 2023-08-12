@@ -262,6 +262,24 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   }
 }
 
+.about .listContainer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.about .listContainer ul {
+  padding-left: 2rem;
+  list-style: disc;
+}
+.about .listContainer ul li {
+  color: #1d1e20;
+}
+.about .listContainer ul li:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.about .listContainer ul li > span {
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
+}
+
 .createTable h3 {
   font-size: 20px;
   padding-bottom: 1.5rem;
@@ -427,17 +445,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 }
 .wrapper > section > div > div.mainContentContainer p:not(:nth-of-type(1)) {
   padding-top: 1rem;
-}
-.wrapper > section > div > div.mainContentContainer ul.contentList {
-  padding-top: 1rem;
-  padding-left: 2rem;
-  list-style: disc;
-}
-.wrapper > section > div > div.mainContentContainer ul.contentList li:not(:nth-of-type(1)) {
-  padding-top: 1rem;
-}
-.wrapper > section > div > div.mainContentContainer ul.contentList li > span {
-  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }
 
 .tableOfContents > ul {

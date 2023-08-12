@@ -15,19 +15,6 @@
       // main content styles
       & > div.mainContentContainer {
         @include generalParagraph;
-        ul.contentList {
-          padding-top: 1rem;
-          padding-left: 2rem;
-          list-style: disc;
-          & li {
-            &:not(:nth-of-type(1)) {
-              padding-top: 1rem;
-            }
-            & > span {
-              font-family: $globalMainFontFamily;
-            }
-          }
-        }
       }
     }
   }
