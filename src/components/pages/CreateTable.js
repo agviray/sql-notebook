@@ -34,17 +34,19 @@ const CreateTable = () => {
               <div className="tableContainer">
                 <h4>Table: countries</h4>
                 <table>
-                  <tr>
-                    <th>name</th>
-                    <th>country</th>
-                    <th>population</th>
-                    <th>area</th>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th>name</th>
+                      <th>country</th>
+                      <th>population</th>
+                      <th>area</th>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </article>
             <section>
-              <h3>Dissecting the query</h3>
+              <h3>Dissecting the Query</h3>
               <article>
                 <h4>Quick Summary</h4>
                 <p>

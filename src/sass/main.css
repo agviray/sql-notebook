@@ -465,6 +465,81 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   border-color: rgb(0, 86, 254);
 }
 
+.insertInto h3 {
+  font-size: 20px;
+  padding-bottom: 1.25rem;
+}
+.insertInto h4 {
+  color: #4a4b4d;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+.insertInto p:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.insertInto section:not(:nth-child(1)),
+.insertInto article:not(:nth-child(1)) {
+  padding-top: 1rem;
+}
+.insertInto section > article:nth-of-type(1) {
+  padding-top: 0;
+}
+.insertInto .tableContainer {
+  padding-top: 1rem;
+}
+.insertInto .tableContainer table {
+  border-collapse: collapse;
+}
+.insertInto .tableContainer table tr:nth-of-type(1) {
+  background-color: #fea700;
+}
+.insertInto .tableContainer table tr:nth-of-type(even) {
+  background-color: rgb(246, 247, 255);
+}
+.insertInto .tableContainer table tr td,
+.insertInto .tableContainer table tr th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #1d1e20;
+}
+.insertInto .queryContainer {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.insertInto .queryContainer > span {
+  display: inline-block;
+  color: rgb(0, 86, 254);
+}
+.insertInto .queryContainer > div.multiLine {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.insertInto .queryContainer > div.multiLine > span {
+  display: inline-block;
+  color: rgb(0, 86, 254);
+}
+.insertInto .queryContainer > div.multiLine > span:not(:first-child) {
+  padding-left: 1rem;
+}
+.insertInto .listContainer {
+  padding-top: 1rem;
+}
+.insertInto .listContainer ul {
+  padding-left: 2rem;
+  list-style: disc;
+}
+.insertInto .listContainer ul li {
+  color: #1d1e20;
+}
+.insertInto .listContainer ul li:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.insertInto .listContainer ul li > span {
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
+}
+
 .wrapper > section > div {
   max-width: 900px;
   margin: 0 auto;
