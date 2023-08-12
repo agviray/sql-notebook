@@ -8,6 +8,7 @@ import TableOfContents from './pages/TableOfContents';
 import GenSqlInfo from './pages/GenSqlInfo';
 import CreateTable from './pages/CreateTable';
 import InsertInto from './pages/InsertInto';
+import Select from './pages/Select';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="gen-sql" element={<GenSqlInfo />} />
         <Route path="create-table" element={<CreateTable />} />
         <Route path="insert-into" element={<InsertInto />} />
+        <Route path="select" element={<Select />} />
       </Route>
     </Routes>
   );

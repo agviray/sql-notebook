@@ -554,6 +554,66 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   padding-top: 1rem;
 }
 
+.select h3 {
+  font-size: 20px;
+  padding-bottom: 1.25rem;
+}
+.select h4 {
+  color: #4a4b4d;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+.select p:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.select section:not(:nth-child(1)),
+.select article:not(:nth-child(1)) {
+  padding-top: 1rem;
+}
+.select section > article:nth-of-type(1) {
+  padding-top: 0;
+}
+.select .queryContainer {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.select .queryContainer > span {
+  display: inline-block;
+  color: rgb(0, 86, 254);
+}
+.select .tableContainer {
+  padding-top: 1rem;
+}
+.select .tableContainer table {
+  border-collapse: collapse;
+}
+.select .tableContainer table tr:nth-of-type(1) {
+  background-color: #fea700;
+}
+.select .tableContainer table tr:nth-of-type(even) {
+  background-color: rgb(246, 247, 255);
+}
+.select .tableContainer table tr td,
+.select .tableContainer table tr th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #1d1e20;
+}
+.select .listContainer ul {
+  padding-left: 2rem;
+  list-style: disc;
+}
+.select .listContainer ul li {
+  color: #1d1e20;
+}
+.select .listContainer ul li:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.select .listContainer ul li > span {
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
+}
+
 .tableOfContents > ul {
   padding-left: 1rem;
 }

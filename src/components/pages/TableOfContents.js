@@ -15,6 +15,10 @@ const tableOfContentsContent = [
     path: '../insert-into',
   },
   {
+    name: 'Keyword - SELECT',
+    path: '../select',
+  },
+  {
     name: 'Queries with Constraints',
     path: '../queries-with-constraints',
   },
