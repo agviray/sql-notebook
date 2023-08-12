@@ -269,11 +269,32 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   font-size: 20px;
   padding-bottom: 1.5rem;
 }
+.generalSqlInfo h4 {
+  color: #4a4b4d;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
 .generalSqlInfo p:not(:nth-of-type(1)) {
   padding-top: 1rem;
 }
 .generalSqlInfo article:not(:nth-child(1)) {
   padding-top: 1rem;
+}
+.generalSqlInfo ul {
+  padding-left: 1rem;
+}
+.generalSqlInfo ul > li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+.generalSqlInfo ul > li > span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #1d1e20;
+  border-radius: 50%;
 }
 .generalSqlInfo span.emphasizedText {
   font-weight: 900;
@@ -283,11 +304,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .generalSqlInfo .tableContainer {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.generalSqlInfo .tableContainer h4 {
-  color: #4a4b4d;
-  font-size: 18px;
-  padding-bottom: 1rem;
 }
 .generalSqlInfo .tableContainer table {
   border-collapse: collapse;

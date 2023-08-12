@@ -3,6 +3,12 @@
   // h3 style
   @include generalH3;
 
+  h4 {
+    color: #4a4b4d;
+    font-size: 18px;
+    padding-bottom: 1rem;
+  }
+
   // Paragraph style
   @include generalParagraph;
 
@@ -11,6 +17,9 @@
       padding-top: 1rem;
     }
   }
+
+  // ul styles
+  @include generalUnorderedList;
 
   span.emphasizedText {
     font-weight: 900;
@@ -21,12 +30,8 @@
   .tableContainer {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    h4 {
-      color: #4a4b4d;
-      font-size: 18px;
-      padding-bottom: 1rem;
-    }
-    // Table style
+
+    // table styles
     @include generalTable;
   }
 }

@@ -19,6 +19,31 @@ const GenSqlInfo = () => {
                 . It is a language used to query, transform, and manipulate data
                 from a relational database.
               </p>
+              <article>
+                <h4>Popular SQL Databases</h4>
+                <ul>
+                  <li>
+                    <span></span>
+                    Oracle
+                  </li>
+                  <li>
+                    <span></span>
+                    Microsoft SQL Server
+                  </li>
+                  <li>
+                    <span></span>
+                    SQLite
+                  </li>
+                  <li>
+                    <span></span>
+                    MySQL
+                  </li>
+                  <li>
+                    <span></span>
+                    Postgres
+                  </li>
+                </ul>
+              </article>
             </article>
             <article>
               <h3>What is a relational database?</h3>
