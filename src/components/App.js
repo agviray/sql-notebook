@@ -9,6 +9,7 @@ import GenSqlInfo from './pages/GenSqlInfo';
 import CreateTable from './pages/CreateTable';
 import InsertInto from './pages/InsertInto';
 import Select from './pages/Select';
+import OrderBy from './pages/OrderBy';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="create-table" element={<CreateTable />} />
         <Route path="insert-into" element={<InsertInto />} />
         <Route path="select" element={<Select />} />
+        <Route path="order-by" element={<OrderBy />} />
       </Route>
     </Routes>
   );

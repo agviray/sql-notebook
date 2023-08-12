@@ -540,6 +540,53 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }
 
+.orderBy h3 {
+  font-size: 20px;
+  padding-bottom: 1.25rem;
+}
+.orderBy h4 {
+  color: #4a4b4d;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+.orderBy p:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.orderBy section:not(:nth-child(1)),
+.orderBy article:not(:nth-child(1)) {
+  padding-top: 1rem;
+}
+.orderBy section > article:nth-of-type(1) {
+  padding-top: 0;
+}
+.orderBy .queryContainer {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.orderBy .queryContainer > span {
+  display: inline-block;
+  color: rgb(0, 86, 254);
+}
+.orderBy .tableContainer {
+  padding-top: 1rem;
+}
+.orderBy .tableContainer table {
+  border-collapse: collapse;
+}
+.orderBy .tableContainer table tr:nth-of-type(1) {
+  background-color: #fea700;
+}
+.orderBy .tableContainer table tr:nth-of-type(even) {
+  background-color: rgb(246, 247, 255);
+}
+.orderBy .tableContainer table tr td,
+.orderBy .tableContainer table tr th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #1d1e20;
+}
+
 .wrapper > section > div {
   max-width: 900px;
   margin: 0 auto;
@@ -572,16 +619,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 }
 .select section > article:nth-of-type(1) {
   padding-top: 0;
-}
-.select .queryContainer {
-  padding-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-.select .queryContainer > span {
-  display: inline-block;
-  color: rgb(0, 86, 254);
 }
 .select .tableContainer {
   padding-top: 1rem;

@@ -1,0 +1,35 @@
+.orderBy {
+  @include generalH3;
+  @include generalH4;
+  @include generalParagraph;
+
+  section,
+  article {
+    &:not(:nth-child(1)) {
+      padding-top: 1rem;
+    }
+  }
+
+  section > article {
+    &:nth-of-type(1) {
+      padding-top: 0;
+    }
+  }
+
+  .queryContainer {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    & > span {
+      display: inline-block;
+      color: $darkBlue;
+    }
+  }
+
+  .tableContainer {
+    padding-top: 1rem;
+    @include generalTable;
+  }
+}
