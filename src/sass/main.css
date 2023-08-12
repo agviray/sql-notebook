@@ -282,7 +282,7 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 
 .createTable h3 {
   font-size: 20px;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
 }
 .createTable h4 {
   color: #4a4b4d;
@@ -294,6 +294,22 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 }
 .createTable article:not(:nth-child(1)) {
   padding-top: 1rem;
+}
+.createTable .queryContainer {
+  padding-top: 1rem;
+}
+.createTable .queryContainer div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.createTable .queryContainer div span {
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
+  display: inline-block;
+  color: rgb(0, 86, 254);
+}
+.createTable .queryContainer div span:not(:first-child):not(:last-child) {
+  padding-left: 1rem;
 }
 .createTable .tableContainer {
   padding-top: 2rem;
@@ -313,13 +329,29 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   padding: 0.25rem 0.5rem;
   border: 1px solid #1d1e20;
 }
+.createTable .listContainer {
+  padding-top: 1rem;
+}
+.createTable .listContainer ul {
+  padding-left: 2rem;
+  list-style: disc;
+}
+.createTable .listContainer ul li {
+  color: #1d1e20;
+}
+.createTable .listContainer ul li:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.createTable .listContainer ul li > span {
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
+}
 
 .generalSqlInfo {
   font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }
 .generalSqlInfo h3 {
   font-size: 20px;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
 }
 .generalSqlInfo h4 {
   color: #4a4b4d;

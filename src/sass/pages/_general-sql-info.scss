@@ -15,7 +15,7 @@
   }
 
   // ul styles
-  @include customList;
+  @include customUl;
 
   span.emphasizedText {
     font-weight: 900;

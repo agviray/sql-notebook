@@ -8,11 +8,20 @@
       padding-top: 1rem;
     }
   }
+  .queryContainer {
+    padding-top: 1rem;
+    @include generalQuery;
+  }
 
   .tableContainer {
     padding-top: 2rem;
     padding-bottom: 2rem;
 
     @include generalTable;
+  }
+
+  .listContainer {
+    padding-top: 1rem;
+    @include plainUl;
   }
 }

@@ -15,7 +15,7 @@
 @mixin generalH3 {
   h3 {
     font-size: 20px;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
   }
 }
 
@@ -43,6 +43,23 @@
       th {
         padding: 0.25rem 0.5rem;
         border: 1px solid $globalFontColor;
+      }
+    }
+  }
+}
+
+@mixin generalQuery {
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    span {
+      font-family: $globalMainFontFamily;
+      display: inline-block;
+      color: $darkBlue;
+      &:not(:first-child):not(:last-child) {
+        padding-left: 1rem;
       }
     }
   }
