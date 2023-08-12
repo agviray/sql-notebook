@@ -420,7 +420,7 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   margin: 0 auto;
   padding: 160px 1.5rem 160px 1.5rem;
 }
-.wrapper > section > div > div.headingContainer > h2 {
+.wrapper > section > div > div.headingContainer h2 {
   font-size: 25px;
   padding-bottom: 2rem;
   color: rgb(0, 86, 254);

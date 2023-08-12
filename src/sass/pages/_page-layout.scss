@@ -9,11 +9,7 @@
 
       // page heading
       & > div.headingContainer {
-        & > h2 {
-          font-size: 25px;
-          padding-bottom: 2rem;
-          color: $darkBlue;
-        }
+        @include generalH2;
       }
 
       // main content styles
