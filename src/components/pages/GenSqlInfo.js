@@ -23,24 +23,19 @@ const GenSqlInfo = () => {
                 <h4>Popular SQL Databases</h4>
                 <ul>
                   <li>
-                    <span></span>
-                    Oracle
+                    <span>Oracle</span>
                   </li>
                   <li>
-                    <span></span>
-                    Microsoft SQL Server
+                    <span>Microsoft SQL Server</span>
                   </li>
                   <li>
-                    <span></span>
-                    SQLite
+                    <span>SQLite</span>
                   </li>
                   <li>
-                    <span></span>
-                    MySQL
+                    <span>MySQL</span>
                   </li>
                   <li>
-                    <span></span>
-                    Postgres
+                    <span>Postgres</span>
                   </li>
                 </ul>
               </article>

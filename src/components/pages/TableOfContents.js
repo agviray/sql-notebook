@@ -37,8 +37,9 @@ const TableOfContents = () => {
               <ul>
                 {tableOfContentsContent.map(({ name, path }, index) => (
                   <li key={index}>
-                    <span></span>
-                    <Link to={path}>{name}</Link>
+                    <Link to={path}>
+                      <span>{name}</span>
+                    </Link>
                   </li>
                 ))}
               </ul>

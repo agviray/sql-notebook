@@ -365,21 +365,17 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   padding-top: 1rem;
 }
 .generalSqlInfo ul {
-  padding-left: 1rem;
+  padding-left: 2rem;
+  list-style: disc;
 }
-.generalSqlInfo ul > li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding-bottom: 1rem;
+.generalSqlInfo ul li {
+  color: #1d1e20;
+}
+.generalSqlInfo ul li:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.generalSqlInfo ul li > span {
   font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
-}
-.generalSqlInfo ul > li > span {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  background-color: #1d1e20;
-  border-radius: 50%;
 }
 .generalSqlInfo span.emphasizedText {
   font-weight: 900;
@@ -620,6 +616,16 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .select section > article:nth-of-type(1) {
   padding-top: 0;
 }
+.select .queryContainer {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.select .queryContainer > span {
+  display: inline-block;
+  color: rgb(0, 86, 254);
+}
 .select .tableContainer {
   padding-top: 1rem;
 }
@@ -651,28 +657,25 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }
 
-.tableOfContents > ul {
-  padding-left: 1rem;
+.tableOfContents ul {
+  padding-left: 2rem;
+  list-style: disc;
 }
-.tableOfContents > ul > li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding-bottom: 1rem;
+.tableOfContents ul li {
+  color: #1d1e20;
 }
-.tableOfContents > ul > li > span {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  background-color: #1d1e20;
-  border-radius: 50%;
+.tableOfContents ul li:not(:nth-of-type(1)) {
+  padding-top: 1rem;
 }
-.tableOfContents > ul > li > a {
+.tableOfContents ul li > span {
   font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }
-.tableOfContents > ul > li:hover > span {
-  background-color: rgb(0, 86, 254);
-}
-.tableOfContents > ul > li:hover > a {
+.tableOfContents ul li:hover {
   color: rgb(0, 86, 254);
+}
+.tableOfContents ul li:hover span {
+  color: rgb(0, 86, 254);
+}
+.tableOfContents ul li span {
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }/*# sourceMappingURL=main.css.map */

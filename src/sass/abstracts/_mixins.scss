@@ -80,25 +80,3 @@
     }
   }
 }
-
-@mixin customUl {
-  ul {
-    padding-left: 1rem;
-    & > li {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding-bottom: 1rem;
-      font-family: $globalMainFontFamily;
-
-      // Custom list disc
-      & > span {
-        display: inline-block;
-        width: 5px;
-        height: 5px;
-        background-color: $globalFontColor;
-        border-radius: 50%;
-      }
-    }
-  }
-}
