@@ -34,6 +34,7 @@
   }
 
   .listContainer {
+    padding-top: 1rem;
     @include plainUl;
   }
 }

@@ -13,6 +13,21 @@ const Select = () => {
               <article>
                 <h3>SELECT In Use</h3>
                 <p>Retrieve data from a table by using the keyword, SELECT.</p>
+                <div className="listContainer">
+                  <ul>
+                    <li>
+                      <span>
+                        Note that we are also using the FROM keyword here.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        The FROM keyword specifies the table to select data
+                        from.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </article>
               <article>
                 <h4>Example 1: Retrieve all data from a table</h4>
