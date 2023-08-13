@@ -30,6 +30,10 @@ const tableOfContentsContent = [
     name: 'Keywords and Clauses - SELECT',
     path: '../select',
   },
+  {
+    name: 'Queries with Expressions (and the AS keyword)',
+    path: '../queries-with-expressions',
+  },
 ];
 
 const TableOfContents = () => {

@@ -10,6 +10,7 @@ import CreateTable from './pages/CreateTable';
 import Delete from './pages/Delete';
 import InsertInto from './pages/InsertInto';
 import OrderBy from './pages/OrderBy';
+import QueriesWithExpressions from './pages/QueriesWithExpressions';
 import Update from './pages/Update';
 import Select from './pages/Select';
 
@@ -24,6 +25,10 @@ const App = () => {
         <Route path="create-table" element={<CreateTable />} />
         <Route path="delete" element={<Delete />} />
         <Route path="insert-into" element={<InsertInto />} />
+        <Route
+          path="queries-with-expressions"
+          element={<QueriesWithExpressions />}
+        />
         <Route path="select" element={<Select />} />
         <Route path="update" element={<Update />} />
         <Route path="order-by" element={<OrderBy />} />
