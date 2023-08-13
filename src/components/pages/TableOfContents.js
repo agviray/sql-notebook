@@ -11,6 +11,10 @@ const tableOfContentsContent = [
     path: '../create-table',
   },
   {
+    name: 'Keywords and Clauses - DELETE',
+    path: '../delete',
+  },
+  {
     name: 'Keywords and Clauses - INSERT INTO',
     path: '../insert-into',
   },
