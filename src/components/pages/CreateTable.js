@@ -32,7 +32,7 @@ const CreateTable = () => {
                 Returns a table called, "cities", and will look something like:
               </p>
               <div className="tableContainer">
-                <h4>Table: countries</h4>
+                <h4>Table: cities</h4>
                 <table>
                   <tbody>
                     <tr>

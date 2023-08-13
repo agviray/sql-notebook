@@ -3,14 +3,11 @@
 
   ul {
     li {
-      &:hover {
-        color: $darkBlue;
-        span {
-          color: $darkBlue;
-        }
-      }
       span {
         font-family: $globalMainFontFamily;
+        &:hover {
+          color: $darkBlue;
+        }
       }
     }
   }

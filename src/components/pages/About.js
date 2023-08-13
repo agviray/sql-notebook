@@ -15,9 +15,12 @@ const About = () => {
               information with examples, in a simple and organized layout.
             </p>
             <p>
-              SQL Notebook only houses a number of static, informational pages
-              at the moment, but I'm aiming to add additional features which
-              might include:
+              SQL Notebook is an ongoing project. I'm building this website with
+              the goal of creating a go-to reference while I continue to learn
+              more about SQL, so I will be periodically updating the content as
+              time goes on. It only houses a number of static, informational
+              pages at the moment, but I'm aiming to add additional features
+              which might include:
             </p>
             <div className="listContainer">
               <ul>
