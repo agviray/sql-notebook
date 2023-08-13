@@ -49,8 +49,8 @@ const Delete = () => {
               <article>
                 <h4>Example 1: Delete a row from a table</h4>
                 <p>
-                  Let's say we want to delete Brandon James from the students
-                  table.
+                  Let's say Brandon James no longer attends the school, so we
+                  want to delete his record from the table.
                 </p>
                 <div className="tableContainer">
                   <h4>Table: students</h4>
