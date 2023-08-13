@@ -23,6 +23,10 @@ const tableOfContentsContent = [
     path: '../order-by',
   },
   {
+    name: 'Keywords and Clauses - UPDATE',
+    path: '../update',
+  },
+  {
     name: 'Keywords and Clauses - SELECT',
     path: '../select',
   },

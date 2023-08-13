@@ -9,8 +9,9 @@ import GenSqlInfo from './pages/GenSqlInfo';
 import CreateTable from './pages/CreateTable';
 import Delete from './pages/Delete';
 import InsertInto from './pages/InsertInto';
-import Select from './pages/Select';
 import OrderBy from './pages/OrderBy';
+import Update from './pages/Update';
+import Select from './pages/Select';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="delete" element={<Delete />} />
         <Route path="insert-into" element={<InsertInto />} />
         <Route path="select" element={<Select />} />
+        <Route path="update" element={<Update />} />
         <Route path="order-by" element={<OrderBy />} />
       </Route>
     </Routes>
