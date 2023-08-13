@@ -7,24 +7,20 @@ const tableOfContentsContent = [
     path: '../gen-sql',
   },
   {
-    name: 'Keyword/Clause - CREATE TABLE',
+    name: 'Keywords and Clauses - CREATE TABLE',
     path: '../create-table',
   },
   {
-    name: 'Keyword/Clause - INSERT INTO',
+    name: 'Keywords and Clauses - INSERT INTO',
     path: '../insert-into',
   },
   {
-    name: 'Keyword/Clause - ORDER BY',
+    name: 'Keywords and Clauses - ORDER BY',
     path: '../order-by',
   },
   {
-    name: 'Keyword/Clause - SELECT',
+    name: 'Keywords and Clauses - SELECT',
     path: '../select',
-  },
-  {
-    name: 'Queries with Constraints',
-    path: '../queries-with-constraints',
   },
 ];
 

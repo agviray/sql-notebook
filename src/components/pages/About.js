@@ -10,13 +10,14 @@ const About = () => {
           </div>
           <div className="about">
             <p>
-              Welcome to SQL Notebook! I built this site to serve as a go-to
-              resource for SQL-related notes, reminders, and *eventually* more.
+              Welcome to SQL Notebook, a resource for SQL-related notes,
+              reminders, and *eventually* more. It contains straightforward
+              information with examples, in a simple and organized layout.
             </p>
             <p>
-              It houses a number of only static, informational pages at the
-              moment, but I'm aiming to add additional features which might
-              include:
+              SQL Notebook only houses a number of static, informational pages
+              at the moment, but I'm aiming to add additional features which
+              might include:
             </p>
             <div className="listContainer">
               <ul>
