@@ -889,4 +889,68 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .update .queryContainer > span {
   display: inline-block;
   color: rgb(0, 86, 254);
+}
+
+.where h3 {
+  font-size: 20px;
+  padding-bottom: 1.25rem;
+}
+.where h4 {
+  color: #4a4b4d;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+.where p:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.where section:not(:nth-child(1)),
+.where article:not(:nth-child(1)) {
+  padding-top: 1rem;
+}
+.where section > article:nth-of-type(1) {
+  padding-top: 0;
+}
+.where .tableContainer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.where .tableContainer table {
+  border-collapse: collapse;
+}
+.where .tableContainer table tr:nth-of-type(1) {
+  background-color: #fea700;
+}
+.where .tableContainer table tr:nth-of-type(even) {
+  background-color: rgb(246, 247, 255);
+}
+.where .tableContainer table tr td,
+.where .tableContainer table tr th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #1d1e20;
+}
+.where .listContainer {
+  padding-top: 1rem;
+}
+.where .listContainer ul {
+  padding-left: 2rem;
+  list-style: disc;
+}
+.where .listContainer ul li {
+  color: #1d1e20;
+}
+.where .listContainer ul li:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.where .listContainer ul li > span {
+  font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
+}
+.where .queryContainer {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.where .queryContainer span {
+  display: inline-block;
+  color: rgb(0, 86, 254);
 }/*# sourceMappingURL=main.css.map */

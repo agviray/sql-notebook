@@ -31,6 +31,10 @@ const tableOfContentsContent = [
     path: '../select',
   },
   {
+    name: 'Keywords and Clauses - WHERE',
+    path: '../where',
+  },
+  {
     name: 'Queries with Expressions (and the AS keyword)',
     path: '../queries-with-expressions',
   },
