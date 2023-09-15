@@ -1,30 +1,35 @@
 import React from 'react';
 
+const tableHeadings = ['Make', 'Model', 'Year'];
+const tableRows = [
+  ['Nissan', 'Altima', '2005'],
+  ['Toyota', 'Camry', '2010'],
+  ['Toyota', 'Venza', '2010'],
+  ['GMC', 'Terrain', '2011'],
+];
 const Table = () => {
+  // - Renders table rows with table data children
+  const renderTableDataRows = (tableRows) => {
+    let tableDataToRender = [];
+    for (let i = 0; i < tableRows.length; i++) {
+      let tableData = tableRows[i].map((tableData, index) => (
+        <td key={index}>{tableData}</td>
+      ));
+      tableDataToRender = [...tableDataToRender, tableData];
+    }
+    return tableDataToRender.map((data, index) => <tr key={index}>{data}</tr>);
+  };
+
   return (
     <>
       <table>
         <tbody>
           <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
+            {tableHeadings.map((heading, index) => (
+              <th key={index}>{heading}</th>
+            ))}
           </tr>
-          <tr>
-            <td>column 1 - Row A data </td>
-            <td>column 2 - Row A data</td>
-            <td>column 3 - Row A data</td>
-          </tr>
-          <tr>
-            <td>column 1 - Row B data </td>
-            <td>column 2 - Row B data</td>
-            <td>column 3 - Row B data</td>
-          </tr>
-          <tr>
-            <td>column 1 - Row C data </td>
-            <td>column 2 - Row C data</td>
-            <td>column 3 - Row C data</td>
-          </tr>
+          <>{renderTableDataRows(tableRows)}</>
         </tbody>
       </table>
     </>

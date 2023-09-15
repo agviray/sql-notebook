@@ -1,4 +1,5 @@
 import React from 'react';
+import Table from '../Table';
 
 const Delete = () => {
   return (
@@ -53,6 +54,7 @@ const Delete = () => {
                   want to delete his record from the table.
                 </p>
                 <div className="tableContainer">
+                  <Table />
                   <h4>Table: students</h4>
                   <table>
                     <tbody>
