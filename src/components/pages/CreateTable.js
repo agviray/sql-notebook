@@ -1,4 +1,8 @@
 import React from 'react';
+import Table from '../Table';
+
+const tableHeadings = ['name', 'country', 'population', 'area'];
+const tableRows = [];
 
 const CreateTable = () => {
   return (
@@ -33,16 +37,7 @@ const CreateTable = () => {
               </p>
               <div className="tableContainer">
                 <h4>Table: cities</h4>
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>name</th>
-                      <th>country</th>
-                      <th>population</th>
-                      <th>area</th>
-                    </tr>
-                  </tbody>
-                </table>
+                <Table tableHeadings={tableHeadings} tableRows={tableRows} />
               </div>
             </article>
             <section>
