@@ -1,6 +1,16 @@
 import React from 'react';
 import Table from '../Table';
 
+const tableHeadings = ['id', 'fName', 'lName', 'age'];
+const tableRows = [
+  ['1', 'Pamela', 'Lee', '42'],
+  ['2', 'Priscilla', 'Nguyen', '26'],
+  ['3', 'Brandon', 'James', '20'],
+  ['4', 'Danny', 'Vargas', '37'],
+  ['5', 'Dennis', 'Lee', '22'],
+  ['6', 'Andre', 'Williams', '35'],
+];
+
 const Delete = () => {
   return (
     <div className="wrapper">
@@ -54,54 +64,8 @@ const Delete = () => {
                   want to delete his record from the table.
                 </p>
                 <div className="tableContainer">
-                  <Table />
                   <h4>Table: students</h4>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>id</th>
-                        <th>fName</th>
-                        <th>lName</th>
-                        <th>age</th>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Pamela</td>
-                        <td>Lee</td>
-                        <td>42</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Priscilla</td>
-                        <td>Nguyen</td>
-                        <td>26</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Brandon</td>
-                        <td>James</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Danny</td>
-                        <td>Vargas</td>
-                        <td>37</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Dennis</td>
-                        <td>Lee</td>
-                        <td>22</td>
-                      </tr>
-                      <tr>
-                        <td>6</td>
-                        <td>Andre</td>
-                        <td>Williams</td>
-                        <td>35</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table tableHeadings={tableHeadings} tableRows={tableRows} />
                 </div>
                 <p>
                   There are different ways to do this, and each of them will

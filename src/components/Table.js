@@ -1,13 +1,6 @@
 import React from 'react';
 
-const tableHeadings = ['Make', 'Model', 'Year'];
-const tableRows = [
-  ['Nissan', 'Altima', '2005'],
-  ['Toyota', 'Camry', '2010'],
-  ['Toyota', 'Venza', '2010'],
-  ['GMC', 'Terrain', '2011'],
-];
-const Table = () => {
+const Table = ({ tableHeadings, tableRows }) => {
   // - Renders table rows with table data children
   const renderTableDataRows = (tableRows) => {
     let tableDataToRender = [];
