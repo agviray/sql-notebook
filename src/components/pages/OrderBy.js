@@ -1,4 +1,43 @@
 import React from 'react';
+import Table from '../Table';
+
+// - Values for movies tables.
+const moviesHeadings = ['title', 'genre', 'year'];
+const moviesTableARows = [
+  ['The Conjuring', 'Horror, Mystery, Thriller', '2013'],
+  ['Akira', 'Anime, Action, Drama', '1988'],
+  ['The Dark and the Wicked', 'Horror', '2020'],
+  ['Pulp Fiction', 'Crime, Drama', '1994'],
+];
+const moviesTableBRows = [
+  ['Akira', 'Anime, Action, Drama', '1988'],
+  ['Pulp Fiction', 'Crime, Drama', '1994'],
+  ['The Conjuring', 'Horror, Mystery, Thriller', '2013'],
+  ['The Dark and the Wicked', 'Horror', '2020'],
+];
+
+// - Values for places tables.
+const placesTableHeadings = ['Id', 'Country', 'City'];
+
+const placesTableARows = [
+  ['1', 'Japan', 'Tokyo'],
+  ['2', 'Canada', 'Toronto'],
+  ['3', 'United States', 'Houston'],
+  ['4', 'Philippines', 'Manila'],
+];
+
+const placesTableBRows = [
+  ['2', 'Canada', 'Toronto'],
+  ['1', 'Japan', 'Tokyo'],
+  ['4', 'Philippines', 'Manila'],
+  ['3', 'United States', 'Houston'],
+];
+const placesTableCRows = [
+  ['4', 'Philippines', 'Manila'],
+  ['3', 'United States', 'Houston'],
+  ['2', 'Canada', 'Toronto'],
+  ['1', 'Japan', 'Tokyo'],
+];
 
 const OrderBy = () => {
   return (
@@ -38,35 +77,10 @@ const OrderBy = () => {
                 </p>
                 <div className="tableContainer">
                   <h4>Table: movies</h4>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>title</th>
-                        <th>genre</th>
-                        <th>year</th>
-                      </tr>
-                      <tr>
-                        <td>The Conjuring</td>
-                        <td>Horror, Mystery, Thriller</td>
-                        <td>2013</td>
-                      </tr>
-                      <tr>
-                        <td>Akira</td>
-                        <td>Anime, Action, Drama</td>
-                        <td>1988</td>
-                      </tr>
-                      <tr>
-                        <td>The Dark and the Wicked</td>
-                        <td>Horror</td>
-                        <td>2020</td>
-                      </tr>
-                      <tr>
-                        <td>Pulp Fiction</td>
-                        <td>Crime, Drama</td>
-                        <td>1994</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={moviesHeadings}
+                    tableRows={moviesTableARows}
+                  />
                 </div>
                 <p>We can run:</p>
                 <div className="queryContainer">
@@ -80,30 +94,10 @@ const OrderBy = () => {
                 </div>
                 <p>and the result will be:</p>
                 <div className="tableContainer">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>title</th>
-                        <th>year</th>
-                      </tr>
-                      <tr>
-                        <td>Akira</td>
-                        <td>1988</td>
-                      </tr>
-                      <tr>
-                        <td>Pulp Fiction</td>
-                        <td>1994</td>
-                      </tr>
-                      <tr>
-                        <td>The Conjuring</td>
-                        <td>2013</td>
-                      </tr>
-                      <tr>
-                        <td>The Dark and the Wicked</td>
-                        <td>2020</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={moviesHeadings}
+                    tableRows={moviesTableBRows}
+                  />
                 </div>
                 <p>
                   Even if we don't use ASC in our query, numerical values will
@@ -120,30 +114,10 @@ const OrderBy = () => {
                 </div>
                 <p>would give us:</p>
                 <div className="tableContainer">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>title</th>
-                        <th>year</th>
-                      </tr>
-                      <tr>
-                        <td>Akira</td>
-                        <td>1988</td>
-                      </tr>
-                      <tr>
-                        <td>Pulp Fiction</td>
-                        <td>1994</td>
-                      </tr>
-                      <tr>
-                        <td>The Conjuring</td>
-                        <td>2013</td>
-                      </tr>
-                      <tr>
-                        <td>The Dark and the Wicked</td>
-                        <td>2020</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={moviesHeadings}
+                    tableRows={moviesTableBRows}
+                  />
                 </div>
               </article>
               <article>
@@ -161,35 +135,10 @@ const OrderBy = () => {
                 </p>
                 <div className="tableContainer">
                   <h4>Table: places</h4>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Id</th>
-                        <th>Country</th>
-                        <th>City</th>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Japan</td>
-                        <td>Tokyo</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Canada</td>
-                        <td>Toronto</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>United States</td>
-                        <td>Houston</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Philippines</td>
-                        <td>Manila</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={placesTableHeadings}
+                    tableRows={placesTableARows}
+                  />
                 </div>
                 <p>
                   Using the places table above, we can run the following query:
@@ -200,35 +149,10 @@ const OrderBy = () => {
                 </div>
                 <p>and the result would be:</p>
                 <div className="tableContainer">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Id</th>
-                        <th>Country</th>
-                        <th>City</th>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Canada</td>
-                        <td>Toronto</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Japan</td>
-                        <td>Tokyo</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Philippines</td>
-                        <td>Manila</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>United States</td>
-                        <td>Houston</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={placesTableHeadings}
+                    tableRows={placesTableBRows}
+                  />
                 </div>
                 <p>Running this query:</p>
                 <div className="queryContainer">
@@ -237,35 +161,10 @@ const OrderBy = () => {
                 </div>
                 <p>would give us this result:</p>
                 <div className="tableContainer">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Id</th>
-                        <th>Country</th>
-                        <th>City</th>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Philippines</td>
-                        <td>Manila</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>United States</td>
-                        <td>Houston</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Canada</td>
-                        <td>Toronto</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Japan</td>
-                        <td>Tokyo</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={placesTableHeadings}
+                    tableRows={placesTableCRows}
+                  />
                 </div>
               </article>
             </section>

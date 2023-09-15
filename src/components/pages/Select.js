@@ -1,4 +1,18 @@
 import React from 'react';
+import Table from '../Table';
+
+const tableAHeadings = ['title', 'genre', 'year'];
+const tableARows = [
+  ['The Conjuring', 'Horror, Mystery, Thriller', '2013'],
+  ['The Dark and the Wicked', 'Horror', '2020'],
+  ['Pulp Fiction', 'Crime, Drama', '1994'],
+];
+const tableBHeadings = ['title', 'year'];
+const tableBRows = [
+  ['The Conjuring', '2013'],
+  ['The Dark and the Wicked', '2020'],
+  ['Pulp Fiction', '1994'],
+];
 
 const Select = () => {
   return (
@@ -37,30 +51,10 @@ const Select = () => {
                 </p>
                 <div className="tableContainer">
                   <h4>Table: movies</h4>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>title</th>
-                        <th>genre</th>
-                        <th>year</th>
-                      </tr>
-                      <tr>
-                        <td>The Conjuring</td>
-                        <td>Horror, Mystery, Thriller</td>
-                        <td>2013</td>
-                      </tr>
-                      <tr>
-                        <td>The Dark and the Wicked</td>
-                        <td>Horror</td>
-                        <td>2020</td>
-                      </tr>
-                      <tr>
-                        <td>Pulp Fiction</td>
-                        <td>Crime, Drama</td>
-                        <td>1994</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={tableAHeadings}
+                    tableRows={tableARows}
+                  />
                 </div>
                 <p>Retrieve ALL data from movies by running:</p>
                 <div className="queryContainer">
@@ -68,30 +62,10 @@ const Select = () => {
                 </div>
                 <p>The result will be:</p>
                 <div className="tableContainer">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>title</th>
-                        <th>genre</th>
-                        <th>year</th>
-                      </tr>
-                      <tr>
-                        <td>The Conjuring</td>
-                        <td>Horror, Mystery, Thriller</td>
-                        <td>2013</td>
-                      </tr>
-                      <tr>
-                        <td>The Dark and the Wicked</td>
-                        <td>Horror</td>
-                        <td>2020</td>
-                      </tr>
-                      <tr>
-                        <td>Pulp Fiction</td>
-                        <td>Crime, Drama</td>
-                        <td>1994</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={tableAHeadings}
+                    tableRows={tableARows}
+                  />
                 </div>
               </article>
               <article>
@@ -109,26 +83,10 @@ const Select = () => {
                 </div>
                 <p>and the result will be:</p>
                 <div className="tableContainer">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>title</th>
-                        <th>year</th>
-                      </tr>
-                      <tr>
-                        <td>The Conjuring</td>
-                        <td>2013</td>
-                      </tr>
-                      <tr>
-                        <td>The Dark and the Wicked</td>
-                        <td>2020</td>
-                      </tr>
-                      <tr>
-                        <td>Pulp Fiction</td>
-                        <td>1994</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={tableBHeadings}
+                    tableRows={tableBRows}
+                  />
                 </div>
               </article>
             </section>

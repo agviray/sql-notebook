@@ -1,4 +1,14 @@
 import React from 'react';
+import Table from '../Table';
+
+const tableHeadings = ['Id', 'Title', 'Genre'];
+const tableRows = [
+  ['1', 'The Dark and the Wicked', 'Horror'],
+  ['2', 'Pulp Fiction', 'Crime, Drama'],
+  ['3', 'Akira', 'Anime, Action, Drama'],
+  ['4', 'The Conjuring', 'Horror, Mystery, Thriller'],
+  ['5', 'Hereditary', 'Horror, Drama, Mystery'],
+];
 
 const GenSqlInfo = () => {
   return (
@@ -61,38 +71,7 @@ const GenSqlInfo = () => {
               </p>
               <div className="tableContainer">
                 <h4>Table: Movies</h4>
-                <table>
-                  <tr>
-                    <th>Id</th>
-                    <th>Title</th>
-                    <th>Genre</th>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>The Dark and the Wicked</td>
-                    <td>Horror</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Pulp Fiction</td>
-                    <td>Crime, Drama</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Akira</td>
-                    <td>Anime, Action, Drama</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>The Conjuring</td>
-                    <td>Horror, Mystery, Thriller</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Hereditary</td>
-                    <td>Horror, Drama, Mystery</td>
-                  </tr>
-                </table>
+                <Table tableHeadings={tableHeadings} tableRows={tableRows} />
               </div>
               <p>
                 The Digital Entertainment database might also contain additional

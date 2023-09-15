@@ -1,5 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Table from '../Table';
+
+const tableHeadings = ['name', 'country', 'population', 'area'];
+const tableARows = [
+  ['Mars City', 'Marsia', '38505000', '8223'],
+  ['Jupiter City', 'Jupiteer', '28125000', '2240'],
+  ['Saturn City', 'Satoorn', '20935000', '3043'],
+];
+const tableBHeadings = ['name', '?column?'];
+const tableBRows = [
+  ['Mars City', '4682'],
+  ['Jupiter City', '12555'],
+  ['Saturn City', '6879'],
+];
+const tableCHeadings = ['name', 'population_density'];
 
 const QueriesWithExpressions = () => {
   return (
@@ -51,34 +66,7 @@ const QueriesWithExpressions = () => {
               </div>
               <div className="tableContainer">
                 <h4>Table: fake cities</h4>
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>name</th>
-                      <th>country</th>
-                      <th>population</th>
-                      <th>area</th>
-                    </tr>
-                    <tr>
-                      <td>Mars City</td>
-                      <td>Marsia</td>
-                      <td>38505000</td>
-                      <td>8223</td>
-                    </tr>
-                    <tr>
-                      <td>Jupiter City</td>
-                      <td>Jupiteer</td>
-                      <td>28125000</td>
-                      <td>2240</td>
-                    </tr>
-                    <tr>
-                      <td>Saturn City</td>
-                      <td>Satoorn</td>
-                      <td>20935000</td>
-                      <td>3043</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <Table tableHeadings={tableHeadings} tableRows={tableARows} />
               </div>
               <p>
                 If we wanted to retrieve our data to display just the city names
@@ -91,26 +79,7 @@ const QueriesWithExpressions = () => {
               </div>
               <p>And our result would show something like:</p>
               <div className="tableContainer">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>name</th>
-                      <th>?column?</th>
-                    </tr>
-                    <tr>
-                      <td>Mars City</td>
-                      <td>4682</td>
-                    </tr>
-                    <tr>
-                      <td>Jupiter City</td>
-                      <td>12555</td>
-                    </tr>
-                    <tr>
-                      <td>Saturn City</td>
-                      <td>6879</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <Table tableHeadings={tableBHeadings} tableRows={tableBRows} />
               </div>
               <p>
                 The population density values are correct, however, we see that
@@ -162,26 +131,7 @@ const QueriesWithExpressions = () => {
               </div>
               <p>And our result would show:</p>
               <div className="tableContainer">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>name</th>
-                      <th>population_density</th>
-                    </tr>
-                    <tr>
-                      <td>Mars City</td>
-                      <td>4682</td>
-                    </tr>
-                    <tr>
-                      <td>Jupiter City</td>
-                      <td>12555</td>
-                    </tr>
-                    <tr>
-                      <td>Saturn City</td>
-                      <td>6879</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <Table tableHeadings={tableCHeadings} tableRows={tableBRows} />
               </div>
             </article>
           </div>

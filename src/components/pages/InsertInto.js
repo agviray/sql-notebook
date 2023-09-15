@@ -9,7 +9,6 @@ const tableCRows = [
   ['The Dark and the Wicked', 'Horror', '2020'],
   ['Pulp Fiction', 'Crime, Drama', '1994'],
 ];
-const tableDRows = [];
 
 const InsertInto = () => {
   return (

@@ -1,4 +1,51 @@
 import React from 'react';
+import Table from '../Table';
+
+// - Data for students table.
+const studentsTableHeadings = ['Id', 'fName', 'lName', 'age'];
+const studentsTableARows = [
+  ['1', 'Pamela', 'Lee', '42'],
+  ['2', 'Priscilla', 'Nguyen', '26'],
+  ['3', 'Brandon', 'James', '20'],
+  ['4', 'Danny', 'Vargas', '37'],
+  ['5', 'Dennis', 'Lee', '22'],
+  ['6', 'Andre', 'Williams', '35'],
+];
+const studentsTableBRows = [
+  ['1', 'Pamela', 'Lee', '42'],
+  ['2', 'Priscilla', 'Nguyen', '26'],
+  ['3', 'Brandon', 'James', '20'],
+  ['4', 'Danny', 'Vargas', '37'],
+  ['5', 'Dennis', 'Lee', '23'],
+  ['6', 'Andre', 'Williams', '35'],
+];
+
+// - Data for employees table.
+const employeesTableHeadings = ['id', 'fName', 'lName', 'role'];
+const employeesTableARows = [
+  ['1', 'Aubrie', 'Jameson', 'CEO'],
+  ['2', 'Jeff', 'Gerry', 'service rep'],
+  ['3', 'Angela', 'Frank', 'data entry'],
+  ['4', 'Aubrie', 'Jameson', 'data entry'],
+  ['5', 'Gordon', 'Barr', 'accountant'],
+  ['6', 'Ryan', 'Arthur', 'data entry'],
+];
+const employeesTableBRows = [
+  ['1', 'Aubrie', 'Jameson', 'service rep'],
+  ['2', 'Jeff', 'Gerry', 'service rep'],
+  ['3', 'Angela', 'Frank', 'data entry'],
+  ['4', 'Aubrie', 'Jameson', 'service rep'],
+  ['5', 'Gordon', 'Barr', 'accountant'],
+  ['6', 'Ryan', 'Arthur', 'data entry'],
+];
+const employeesTableCRows = [
+  ['1', 'Aubrie', 'Jameson', 'CEO'],
+  ['2', 'Jeff', 'Gerry', 'service rep'],
+  ['3', 'Angela', 'Frank', 'data entry'],
+  ['4', 'Aubrie', 'Jameson', 'service rep'],
+  ['5', 'Gordon', 'Barr', 'accountant'],
+  ['6', 'Ryan', 'Arthur', 'data entry'],
+];
 
 const Update = () => {
   return (
@@ -43,52 +90,10 @@ const Update = () => {
                 </p>
                 <div className="tableContainer">
                   <h4>Table: students</h4>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>id</th>
-                        <th>fName</th>
-                        <th>lName</th>
-                        <th>age</th>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Pamela</td>
-                        <td>Lee</td>
-                        <td>42</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Priscilla</td>
-                        <td>Nguyen</td>
-                        <td>26</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Brandon</td>
-                        <td>James</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Danny</td>
-                        <td>Vargas</td>
-                        <td>37</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Dennis</td>
-                        <td>Lee</td>
-                        <td>22</td>
-                      </tr>
-                      <tr>
-                        <td>6</td>
-                        <td>Andre</td>
-                        <td>Williams</td>
-                        <td>35</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={studentsTableHeadings}
+                    tableRows={studentsTableARows}
+                  />
                 </div>
                 <p>
                   We update Dennis's age to be 23 by running the following
@@ -101,52 +106,10 @@ const Update = () => {
                 </div>
                 <p>Our result would then be:</p>
                 <div className="tableContainer">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>id</th>
-                        <th>fName</th>
-                        <th>lName</th>
-                        <th>age</th>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Pamela</td>
-                        <td>Lee</td>
-                        <td>42</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Priscilla</td>
-                        <td>Nguyen</td>
-                        <td>26</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Brandon</td>
-                        <td>James</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Danny</td>
-                        <td>Vargas</td>
-                        <td>37</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Dennis</td>
-                        <td>Lee</td>
-                        <td>23</td>
-                      </tr>
-                      <tr>
-                        <td>6</td>
-                        <td>Andre</td>
-                        <td>Williams</td>
-                        <td>35</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={studentsTableHeadings}
+                    tableRows={studentsTableBRows}
+                  />
                 </div>
               </article>
             </section>
@@ -164,52 +127,10 @@ const Update = () => {
                 <p>Take the following employees table for example:</p>
                 <div className="tableContainer">
                   <h4>Table: employees</h4>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>id</th>
-                        <th>fName</th>
-                        <th>lName</th>
-                        <th>role</th>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Aubrie</td>
-                        <td>Jameson</td>
-                        <td>CEO</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Jeff</td>
-                        <td>Gerry</td>
-                        <td>service rep</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Angela</td>
-                        <td>Frank</td>
-                        <td>data entry</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Aubrie</td>
-                        <td>Jameson</td>
-                        <td>data entry</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Gordon</td>
-                        <td>Barr</td>
-                        <td>accountant</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Ryan</td>
-                        <td>Arthur</td>
-                        <td>data entry</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={employeesTableHeadings}
+                    tableRows={employeesTableARows}
+                  />
                 </div>
                 <p>
                   Let's say Aubrie Jameson was promoted to a service rep role.
@@ -222,52 +143,10 @@ const Update = () => {
                 </div>
                 <p>Our result would show:</p>
                 <div className="tableContainer">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>id</th>
-                        <th>fName</th>
-                        <th>lName</th>
-                        <th>role</th>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Aubrie</td>
-                        <td>Jameson</td>
-                        <td>service rep</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Jeff</td>
-                        <td>Gerry</td>
-                        <td>service rep</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Angela</td>
-                        <td>Frank</td>
-                        <td>data entry</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Aubrie</td>
-                        <td>Jameson</td>
-                        <td>service rep</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Gordon</td>
-                        <td>Barr</td>
-                        <td>accountant</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Ryan</td>
-                        <td>Arthur</td>
-                        <td>data entry</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={employeesTableHeadings}
+                    tableRows={employeesTableBRows}
+                  />
                 </div>
                 <p>
                   Comparing the original employees table to the updated version,
@@ -292,52 +171,10 @@ const Update = () => {
                 </div>
                 <p>This would give us our desired result:</p>
                 <div className="tableContainer">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>id</th>
-                        <th>fName</th>
-                        <th>lName</th>
-                        <th>role</th>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Aubrie</td>
-                        <td>Jameson</td>
-                        <td>CEO</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Jeff</td>
-                        <td>Gerry</td>
-                        <td>service rep</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Angela</td>
-                        <td>Frank</td>
-                        <td>data entry</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Aubrie</td>
-                        <td>Jameson</td>
-                        <td>service rep</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Gordon</td>
-                        <td>Barr</td>
-                        <td>accountant</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Ryan</td>
-                        <td>Arthur</td>
-                        <td>data entry</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={employeesTableHeadings}
+                    tableRows={employeesTableCRows}
+                  />
                 </div>
               </article>
             </section>

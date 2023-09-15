@@ -1,4 +1,35 @@
 import React from 'react';
+import Table from '../Table';
+
+// - Table data for movies table.
+const moviesTableHeadings = ['title', 'genre', 'year'];
+const moviesTableARows = [
+  ['The Conjuring', 'Horror, Mystery, Thriller', '2013'],
+  ['Akira', 'Anime, Action, Drama', '1988'],
+  ['The Dark and the Wicked', 'Horror', '2020'],
+  ['Pulp Fiction', 'Crime, Drama', '1994'],
+  ['Con Air', 'Action, Crime, Thriller', '1997'],
+  ['Let the Right One In', 'Drama, Fantasy, Horror', '2008'],
+  ['The Witch', 'Drama, Fantasy, Horror', '2015'],
+];
+const moviesTableBRows = [
+  ['Akira', 'Anime, Action, Drama', '1988'],
+  ['Pulp Fiction', 'Crime, Drama', '1994'],
+  ['Con Air', 'Action, Crime, Thriller', '1997'],
+];
+
+// - Table data for the_bobs table.
+const theBobsTableHeadings = ['Id', 'Name', 'Age'];
+const theBobsTableARows = [
+  ['25', 'Bob', '18'],
+  ['11', 'Bob', '38'],
+  ['12', 'Bob', '32'],
+  ['13', 'Bob', '24'],
+  ['23', 'Bob', '29'],
+  ['24', 'Bob', '41'],
+  ['27', 'Bob', '19'],
+];
+const theBobsTableBRows = [['23', 'Bob', '29']];
 
 const Where = () => {
   return (
@@ -48,50 +79,10 @@ const Where = () => {
                 <h4>Example 1: Filtering records with WHERE</h4>
                 <div className="tableContainer">
                   <h4>Table: movies</h4>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>title</th>
-                        <th>genre</th>
-                        <th>year</th>
-                      </tr>
-                      <tr>
-                        <td>The Conjuring</td>
-                        <td>Horror, Mystery, Thriller</td>
-                        <td>2013</td>
-                      </tr>
-                      <tr>
-                        <td>Akira</td>
-                        <td>Anime, Action, Drama</td>
-                        <td>1988</td>
-                      </tr>
-                      <tr>
-                        <td>The Dark and the Wicked</td>
-                        <td>Horror</td>
-                        <td>2020</td>
-                      </tr>
-                      <tr>
-                        <td>Pulp Fiction</td>
-                        <td>Crime, Drama</td>
-                        <td>1994</td>
-                      </tr>
-                      <tr>
-                        <td>Con Air</td>
-                        <td>Action, Crime, Thriller</td>
-                        <td>1997</td>
-                      </tr>
-                      <tr>
-                        <td>Let the Right One In</td>
-                        <td>Drama, Fantasy, Horror</td>
-                        <td>2008</td>
-                      </tr>
-                      <tr>
-                        <td>The Witch</td>
-                        <td>Drama, Fantasy, Horror</td>
-                        <td>2015</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={moviesTableHeadings}
+                    tableRows={moviesTableARows}
+                  />
                 </div>
                 <p>
                   Using the movies table, we can use WHERE to filter movies
@@ -104,30 +95,10 @@ const Where = () => {
                 </div>
                 <p>And the returned result would show:</p>
                 <div className="tableContainer">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>title</th>
-                        <th>genre</th>
-                        <th>year</th>
-                      </tr>
-                      <tr>
-                        <td>Akira</td>
-                        <td>Anime, Action, Drama</td>
-                        <td>1988</td>
-                      </tr>
-                      <tr>
-                        <td>Pulp Fiction</td>
-                        <td>Crime, Drama</td>
-                        <td>1994</td>
-                      </tr>
-                      <tr>
-                        <td>Con Air</td>
-                        <td>Action, Crime, Thriller</td>
-                        <td>1997</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={moviesTableHeadings}
+                    tableRows={moviesTableBRows}
+                  />
                 </div>
               </article>
               <article>
@@ -137,50 +108,10 @@ const Where = () => {
                 </h4>
                 <div className="tableContainer">
                   <h4>Table: the_bobs</h4>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Age</th>
-                      </tr>
-                      <tr>
-                        <td>25</td>
-                        <td>Bob</td>
-                        <td>18</td>
-                      </tr>
-                      <tr>
-                        <td>11</td>
-                        <td>Bob</td>
-                        <td>38</td>
-                      </tr>
-                      <tr>
-                        <td>12</td>
-                        <td>Bob</td>
-                        <td>32</td>
-                      </tr>
-                      <tr>
-                        <td>13</td>
-                        <td>Bob</td>
-                        <td>24</td>
-                      </tr>
-                      <tr>
-                        <td>23</td>
-                        <td>Bob</td>
-                        <td>29</td>
-                      </tr>
-                      <tr>
-                        <td>24</td>
-                        <td>Bob</td>
-                        <td>41</td>
-                      </tr>
-                      <tr>
-                        <td>27</td>
-                        <td>Bob</td>
-                        <td>19</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table
+                    tableHeadings={theBobsTableHeadings}
+                    tableRows={theBobsTableARows}
+                  />
                 </div>
                 <p>
                   We can also filter records with WHERE even if we have multiple
@@ -198,20 +129,10 @@ const Where = () => {
                 <p>The result would show:</p>
                 <div className="queryContainer">
                   <div className="tableContainer">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <th>Id</th>
-                          <th>Name</th>
-                          <th>Age</th>
-                        </tr>
-                        <tr>
-                          <td>23</td>
-                          <td>Bob</td>
-                          <td>29</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <Table
+                      tableHeadings={theBobsTableHeadings}
+                      tableRows={theBobsTableBRows}
+                    />
                   </div>
                 </div>
               </article>
