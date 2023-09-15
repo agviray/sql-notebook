@@ -1,4 +1,15 @@
 import React from 'react';
+import Table from '../Table';
+
+const tableHeadings = ['title', 'genre', 'year'];
+const tableARows = [];
+const tableBRows = [['The Conjuring', 'Horror, Mystery, Thriller', '2013']];
+const tableCRows = [
+  ['The Conjuring', 'Horror, Mystery, Thriller', '2013'],
+  ['The Dark and the Wicked', 'Horror', '2020'],
+  ['Pulp Fiction', 'Crime, Drama', '1994'],
+];
+const tableDRows = [];
 
 const InsertInto = () => {
   return (
@@ -21,15 +32,7 @@ const InsertInto = () => {
                 <p>Let's say we have the following empty 'movies' table:</p>
                 <div className="tableContainer">
                   <h4>Table: movies</h4>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>title</th>
-                        <th>genre</th>
-                        <th>year</th>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table tableHeadings={tableHeadings} tableRows={tableARows} />
                 </div>
                 <p>Running this query:</p>
                 <div className="queryContainer">
@@ -41,20 +44,7 @@ const InsertInto = () => {
                 <p>Will return this result:</p>
                 <div className="tableContainer">
                   <h4>Table: movies</h4>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>title</th>
-                        <th>genre</th>
-                        <th>year</th>
-                      </tr>
-                      <tr>
-                        <td>The Conjuring</td>
-                        <td>Horror, Mystery, Thriller</td>
-                        <td>2013</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table tableHeadings={tableHeadings} tableRows={tableBRows} />
                 </div>
               </article>
               <article>
@@ -76,30 +66,7 @@ const InsertInto = () => {
                 <p>Result:</p>
                 <div className="tableContainer">
                   <h4>Table: movies</h4>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>title</th>
-                        <th>genre</th>
-                        <th>year</th>
-                      </tr>
-                      <tr>
-                        <td>The Conjuring</td>
-                        <td>Horror, Mystery, Thriller</td>
-                        <td>2013</td>
-                      </tr>
-                      <tr>
-                        <td>The Dark and the Wicked</td>
-                        <td>Horror</td>
-                        <td>2020</td>
-                      </tr>
-                      <tr>
-                        <td>Pulp Fiction</td>
-                        <td>Crime, Drama</td>
-                        <td>1994</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Table tableHeadings={tableHeadings} tableRows={tableCRows} />
                 </div>
               </article>
             </section>
@@ -146,20 +113,10 @@ const InsertInto = () => {
                     </li>
                     <div className="tableContainer">
                       <h4>Table: movies</h4>
-                      <table>
-                        <tbody>
-                          <tr>
-                            <th>title</th>
-                            <th>genre</th>
-                            <th>year</th>
-                          </tr>
-                          <tr>
-                            <td>The Conjuring</td>
-                            <td>Horror, Mystery, Thriller</td>
-                            <td>2013</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <Table
+                        tableHeadings={tableHeadings}
+                        tableRows={tableBRows}
+                      />
                     </div>
                   </ul>
                 </div>
