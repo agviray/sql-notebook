@@ -333,20 +333,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.createTable .tableContainer table {
-  border-collapse: collapse;
-}
-.createTable .tableContainer table tr:nth-of-type(1) {
-  background-color: #fea700;
-}
-.createTable .tableContainer table tr:nth-of-type(even) {
-  background-color: rgb(246, 247, 255);
-}
-.createTable .tableContainer table tr td,
-.createTable .tableContainer table tr th {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #1d1e20;
-}
 .createTable .listContainer {
   padding-top: 1rem;
 }
@@ -402,20 +388,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .delete .tableContainer {
   padding-top: 1rem;
 }
-.delete .tableContainer table {
-  border-collapse: collapse;
-}
-.delete .tableContainer table tr:nth-of-type(1) {
-  background-color: #fea700;
-}
-.delete .tableContainer table tr:nth-of-type(even) {
-  background-color: rgb(246, 247, 255);
-}
-.delete .tableContainer table tr td,
-.delete .tableContainer table tr th {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #1d1e20;
-}
 
 .queryContainer {
   padding-top: 1rem;
@@ -467,20 +439,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .generalSqlInfo .tableContainer {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.generalSqlInfo .tableContainer table {
-  border-collapse: collapse;
-}
-.generalSqlInfo .tableContainer table tr:nth-of-type(1) {
-  background-color: #fea700;
-}
-.generalSqlInfo .tableContainer table tr:nth-of-type(even) {
-  background-color: rgb(246, 247, 255);
-}
-.generalSqlInfo .tableContainer table tr td,
-.generalSqlInfo .tableContainer table tr th {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #1d1e20;
 }
 
 .homePageWrapper {
@@ -565,20 +523,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .insertInto .tableContainer {
   padding-top: 1rem;
 }
-.insertInto .tableContainer table {
-  border-collapse: collapse;
-}
-.insertInto .tableContainer table tr:nth-of-type(1) {
-  background-color: #fea700;
-}
-.insertInto .tableContainer table tr:nth-of-type(even) {
-  background-color: rgb(246, 247, 255);
-}
-.insertInto .tableContainer table tr td,
-.insertInto .tableContainer table tr th {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #1d1e20;
-}
 .insertInto .queryContainer {
   padding-top: 1rem;
   display: flex;
@@ -650,20 +594,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .orderBy .tableContainer {
   padding-top: 1rem;
 }
-.orderBy .tableContainer table {
-  border-collapse: collapse;
-}
-.orderBy .tableContainer table tr:nth-of-type(1) {
-  background-color: #fea700;
-}
-.orderBy .tableContainer table tr:nth-of-type(even) {
-  background-color: rgb(246, 247, 255);
-}
-.orderBy .tableContainer table tr td,
-.orderBy .tableContainer table tr th {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #1d1e20;
-}
 
 .wrapper > section > div {
   max-width: 900px;
@@ -701,20 +631,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .queriesWithExpressions .tableContainer {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.queriesWithExpressions .tableContainer table {
-  border-collapse: collapse;
-}
-.queriesWithExpressions .tableContainer table tr:nth-of-type(1) {
-  background-color: #fea700;
-}
-.queriesWithExpressions .tableContainer table tr:nth-of-type(even) {
-  background-color: rgb(246, 247, 255);
-}
-.queriesWithExpressions .tableContainer table tr td,
-.queriesWithExpressions .tableContainer table tr th {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #1d1e20;
 }
 .queriesWithExpressions .listContainer {
   padding-top: 1rem;
@@ -792,20 +708,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .select .tableContainer {
   padding-top: 1rem;
 }
-.select .tableContainer table {
-  border-collapse: collapse;
-}
-.select .tableContainer table tr:nth-of-type(1) {
-  background-color: #fea700;
-}
-.select .tableContainer table tr:nth-of-type(even) {
-  background-color: rgb(246, 247, 255);
-}
-.select .tableContainer table tr td,
-.select .tableContainer table tr th {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #1d1e20;
-}
 .select .listContainer {
   padding-top: 1rem;
 }
@@ -865,20 +767,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .update .tableContainer {
   padding-top: 1rem;
 }
-.update .tableContainer table {
-  border-collapse: collapse;
-}
-.update .tableContainer table tr:nth-of-type(1) {
-  background-color: #fea700;
-}
-.update .tableContainer table tr:nth-of-type(even) {
-  background-color: rgb(246, 247, 255);
-}
-.update .tableContainer table tr td,
-.update .tableContainer table tr th {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #1d1e20;
-}
 .update .listContainer {
   padding-top: 1rem;
 }
@@ -928,20 +816,6 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
 .where .tableContainer {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.where .tableContainer table {
-  border-collapse: collapse;
-}
-.where .tableContainer table tr:nth-of-type(1) {
-  background-color: #fea700;
-}
-.where .tableContainer table tr:nth-of-type(even) {
-  background-color: rgb(246, 247, 255);
-}
-.where .tableContainer table tr td,
-.where .tableContainer table tr th {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #1d1e20;
 }
 .where .listContainer {
   padding-top: 1rem;
