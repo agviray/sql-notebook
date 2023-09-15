@@ -55,6 +55,21 @@ button {
   font-family: "IBM Plex Sans Medium";
   src: url(../fonts/ibm_plex_sans_ff/IBMPlexSans-Medium.ttf);
 }
+table {
+  border-collapse: collapse;
+}
+table tr:nth-of-type(1) {
+  background-color: #fea700;
+}
+table tr:nth-of-type(even) {
+  background-color: rgb(246, 247, 255);
+}
+table tr td,
+table tr th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #1d1e20;
+}
+
 .overlay {
   display: block;
   position: fixed;
