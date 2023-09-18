@@ -35,6 +35,10 @@ const tableOfContentsContent = [
     path: '../where',
   },
   {
+    name: 'Operators - IN',
+    path: '../in-operator',
+  },
+  {
     name: 'Queries with Expressions (and the AS keyword)',
     path: '../queries-with-expressions',
   },

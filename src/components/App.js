@@ -8,6 +8,7 @@ import TableOfContents from './pages/TableOfContents';
 import GenSqlInfo from './pages/GenSqlInfo';
 import CreateTable from './pages/CreateTable';
 import Delete from './pages/Delete';
+import InOperator from './pages/InOperator';
 import InsertInto from './pages/InsertInto';
 import OrderBy from './pages/OrderBy';
 import QueriesWithExpressions from './pages/QueriesWithExpressions';
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="select" element={<Select />} />
         <Route path="update" element={<Update />} />
         <Route path="where" element={<Where />} />
+        <Route path="in-operator" element={<InOperator />} />
       </Route>
     </Routes>
   );
