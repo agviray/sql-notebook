@@ -39,6 +39,10 @@ const tableOfContentsContent = [
     path: '../in-operator',
   },
   {
+    name: 'Operators - NOT',
+    path: '../not-operator',
+  },
+  {
     name: 'Queries with Expressions (and the AS keyword)',
     path: '../queries-with-expressions',
   },

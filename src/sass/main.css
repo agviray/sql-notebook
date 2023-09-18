@@ -586,6 +586,30 @@ header > nav > .content .hamburger.toggledOpen > span:nth-of-type(3) {
   font-family: "IBM Plex Sans Light", Arial, Helvetica, sans-serif;
 }
 
+.notOperator h3 {
+  font-size: 20px;
+  padding-bottom: 1.25rem;
+}
+.notOperator h4 {
+  color: #4a4b4d;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+.notOperator p:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+.notOperator section:not(:nth-child(1)),
+.notOperator article:not(:nth-child(1)) {
+  padding-top: 1rem;
+}
+.notOperator section > article:nth-of-type(1) {
+  padding-top: 0;
+}
+.notOperator .tableContainer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .orderBy h3 {
   font-size: 20px;
   padding-bottom: 1.25rem;

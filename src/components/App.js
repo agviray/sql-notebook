@@ -10,6 +10,7 @@ import CreateTable from './pages/CreateTable';
 import Delete from './pages/Delete';
 import InOperator from './pages/InOperator';
 import InsertInto from './pages/InsertInto';
+import NotOperator from './pages/NotOperator';
 import OrderBy from './pages/OrderBy';
 import QueriesWithExpressions from './pages/QueriesWithExpressions';
 import Update from './pages/Update';
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="update" element={<Update />} />
         <Route path="where" element={<Where />} />
         <Route path="in-operator" element={<InOperator />} />
+        <Route path="not-operator" element={<NotOperator />} />
       </Route>
     </Routes>
   );
